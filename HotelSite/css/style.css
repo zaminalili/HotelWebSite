@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    margin: 1rem 0;
+}
+
+img{
+    width: 100%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+/* ------ */
+
+#main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark);
+    color: white;
+    font-size: 1.5rem;
+    opacity: 0.8;
+    padding: 0 3rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8.5rem;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a{
+    color: white;
+    padding: 1rem 2rem;
+    margin: 0 0.5rem;
+}
+
+nav a:hover{
+    border-bottom: solid 2px var(--warning);
+
+}
+
+
+span{
+    color: var(--warning);
+}
+
+
+header {
+    background-image: url('../images/bg-hotel.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    position: relative;
+}
+
+.content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;   
+}
+
+.content h1, p{
+    margin-bottom: 20px;
+}
+
+.content h1{
+    font-size: 3.0rem;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+}
+
+header * {
+    z-index: 5;
+}
+
+main {
+    padding: 20px;
+}
+
+
+.box {
+    font-size: 1.2rem;
+    padding: 1.0rem;
+}
+
+.box h1 {
+    font-size: 1.3rem;
+    color: var(--secondary);
+    margin-top: 10px;
+}
+
+.box i{
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.column {
+    width: 80%;
+}
+
+.clm-2{
+    padding-top: 30px;
+}
+
+/* .clm-2 {
+    padding: 0 25px;
+} */
+
+.column h1, p, .btn-outline{
+    margin: 0 0 25px 25px;
+}
+
+
+.gallery-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.images img{
+    width: 33.3%;
+    padding: 2.0rem;
+}
+
+.images img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform .5s
+}
+
+#cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    width: 30.0rem;
+    margin-bottom: 10px;
+}
+
+.cardtext {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--warning);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    color: white;
+    padding-top: 20px;
+    margin-top: 1px;
+
+}
+
+.cardtext h1, p {
+    margin-top: 10px;
+}
+
+
+#team{
+    display: flex;
+    justify-content: space-around;
+    margin: 60px 0;
+    background-color: var(--light);
+    font-size: 1.3rem;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.humanfoto img{
+    width: 22.0rem;
+    border-radius: 100%;
+}
+
+.humanfoto img:hover{
+    opacity: 0.9;
+}
+
+.humantext {
+    margin-top: 20px;
+    display: block;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    padding: 0 40px;
+}
+
+form h1, label, input{
+    margin-top: 15px;
+}
+
+form input{
+    padding: 7px 5px;
+    border: solid 1px rgb(204, 202, 202);
+    border-radius: 5px;
+}
+
+form input:focus{
+    outline: none;
+}
+
+form .btn{
+    margin-top: 25px;
+    color: white;
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    font-size: 1.2rem;
+}
+
+#social{
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+#social a:hover{
+    color: var(--primary)
+}

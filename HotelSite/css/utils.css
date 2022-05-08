@@ -1,0 +1,124 @@
+:root{
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --danger: #dc3545;
+    --warning: #ffc107;
+    --info: #17a2b8;
+    --dark: #343a40;
+    --light: #f8f9fa;
+}
+
+.text-primary {color: var(--primary);}
+.text-secondary {color: var(--secondary);}
+.text-success {color: var(--success);}
+.text-danger {color: var(--danger);}
+.text-warning {color: var(--warning);}
+.text-info {color: var(--info);}
+.text-dark {color: var(--dark);}
+.text-light {color: var(--light);}
+
+.bg-primary {background-color: var(--primary);}
+.bg-secondary {background-color: var(--secondary);}
+.bg-success {background-color: var(--success);}
+.bg-danger {background-color: var(--danger);}
+.bg-warning {background-color: var(--warning);}
+.bg-info {background-color: var(--info);}
+.bg-dark {background-color: var(--dark);}
+.bg-light {background-color: var(--light);}
+
+
+
+/* Buttons */
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-primary{
+    background-color: var(--primary);
+}
+
+.btn-outline{
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn-outline:hover{
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+}
+
+
+/* Flex Container */
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.flex-reverse{
+    flex-direction: row-reverse;
+    margin-top: 20px;
+    background-color: var(--info);
+}
+
+
+@media(max-width: 920px){
+    #cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .card{
+        width: 60.0rem;
+    }
+
+    html{
+        font-size: 8px;
+    }
+}
+
+@media(max-width: 850px){
+    .images{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .images img{
+        width: 90%;
+    }
+
+}
+@media(max-width: 740px){
+    #main-header{
+        flex-direction: column;
+    }
+
+    nav{
+        margin-bottom: 15px;
+    }
+
+}
+
+@media(max-width: 660px){
+    .flex{
+        flex-direction: column;
+    }
+
+    .flex-container{
+        flex-direction: column;
+    }
+
+
+}
